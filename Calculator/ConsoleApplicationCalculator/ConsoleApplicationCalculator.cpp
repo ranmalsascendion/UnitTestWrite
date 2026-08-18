@@ -3,10 +3,27 @@
 
 #include <iostream>
 
+int Add(int a, int b)
+{
+    return a + b;
+}
+int Substraction(int a, int b)
+{
+    return a - b;
+}
+
+
 int main()
 {
     std::cout << "Hello World!\n";
+
+    int x = 5, y = 6;
+
+    std::cout <<"Addition "<< Add(x, y) << std::endl;
+    std::cout << "Substraction " << Substraction(x, y) << std::endl;
+
 }
+
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
