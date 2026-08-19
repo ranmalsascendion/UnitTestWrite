@@ -3,11 +3,11 @@
 
 #include <iostream>
 
-int Add(int a, int b)
+int Sum(int a, int b)
 {
     return a + b;
 }
-int Substraction(int a, int b)
+int Difference(int a, int b)
 {
     return a - b;
 }
@@ -19,8 +19,8 @@ int main()
 
     int x = 5, y = 6;
 
-    std::cout <<"Addition "<< Add(x, y) << std::endl;
-    std::cout << "Substraction " << Substraction(x, y) << std::endl;
+    std::cout <<"Addition "<< Sum(x, y) << std::endl;
+    std::cout << "Substraction " << Difference(x, y) << std::endl;
 
 }
 
