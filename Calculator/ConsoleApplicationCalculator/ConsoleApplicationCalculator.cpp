@@ -3,10 +3,41 @@
 
 #include <iostream>
 
+int Sum(int a, int b)
+{
+    return a + b;
+}
+int Difference(int a, int b)
+{
+    return a - b;
+}
+int Multiply(int a, int b)
+{
+    return a*b;
+}
+double Devide(int a, int b)
+{
+    if (b != 0)
+    {
+        return a * 1.0 / b;
+    }
+
+    return NAN;
+}
+
 int main()
 {
     std::cout << "Hello World!\n";
+
+    int x = 5, y = 6;
+
+    std::cout <<"Addition "<< Sum(x, y) << std::endl;
+    std::cout << "Substraction " << Difference(x, y) << std::endl;
+    std::cout << "Multiply " << Multiply(x, y) << std::endl;
+    std::cout << "Devide " << Devide(x, y) << std::endl;
+
 }
+
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
